@@ -12,6 +12,7 @@ class Router: ObservableObject {
     struct State {
         var navigating: AnyView? = nil
         var presentingSheet: AnyView? = nil
+        var presentingFullScreen: AnyView? = nil
         var isPresented: Binding<Bool>
     }
     
@@ -32,6 +33,10 @@ extension Router {
         state.presentingSheet = AnyView(view)
     }
     
+    func presentFullScreen<V: View>(_ view: V) {
+        state.presentingFullScreen = AnyView(view)
+    }
+    
     func dismiss() {
         state.isPresented.wrappedValue = false
     }
@@ -45,6 +50,10 @@ extension Router {
     
     var isPresentingSheet: Binding<Bool> {
         boolBinding(keyPath: \.presentingSheet)
+    }
+    
+    var isPresentingFullScreen: Binding<Bool> {
+        boolBinding(keyPath: \.presentingFullScreen)
     }
     
     var isPresented: Binding<Bool> {
@@ -81,5 +90,9 @@ extension View {
     
     func sheet(_ router: Router) -> some View {
         self.modifier(SheetModifier(presentingView: router.binding(keyPath: \.presentingSheet)))
+    }
+    
+    func fullScreen(_ router: Router) -> some View {
+        self.modifier(FullScreenModifier(presentingView: router.binding(keyPath: \.presentingFullScreen)))
     }
 }
