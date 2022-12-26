@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931FAFA1295A5B950091D28A /* FullScreenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FAFA0295A5B950091D28A /* FullScreenModifier.swift */; };
 		A296C3BC25178306005B03F2 /* RouterWithModifiersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A296C3BB25178306005B03F2 /* RouterWithModifiersApp.swift */; };
 		A296C3BE25178306005B03F2 /* PresentingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A296C3BD25178306005B03F2 /* PresentingView.swift */; };
 		A296C3C025178309005B03F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A296C3BF25178309005B03F2 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		931FAFA0295A5B950091D28A /* FullScreenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenModifier.swift; sourceTree = "<group>"; };
 		A296C3B825178306005B03F2 /* RouterWithModifiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouterWithModifiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A296C3BB25178306005B03F2 /* RouterWithModifiersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterWithModifiersApp.swift; sourceTree = "<group>"; };
 		A296C3BD25178306005B03F2 /* PresentingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				A296C3CF25178677005B03F2 /* Router.swift */,
 				A296C3CD25178677005B03F2 /* SheetModifier.swift */,
 				A296C3CE25178677005B03F2 /* NavigationModifier.swift */,
+				931FAFA0295A5B950091D28A /* FullScreenModifier.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				A296C3D125178677005B03F2 /* NavigationModifier.swift in Sources */,
 				A296C3D025178677005B03F2 /* SheetModifier.swift in Sources */,
 				A296C3D225178677005B03F2 /* Router.swift in Sources */,
+				931FAFA1295A5B950091D28A /* FullScreenModifier.swift in Sources */,
 				A296C3D4251786AF005B03F2 /* PresentingRouter.swift in Sources */,
 				A296C3BC25178306005B03F2 /* RouterWithModifiersApp.swift in Sources */,
 			);
